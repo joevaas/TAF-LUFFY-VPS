@@ -10,3 +10,6 @@ RUN apt-get update && apt-get install -y git && apt-get clean
 RUN pip3 install -r requirements.txt
 
 COPY . .
+
+# Command to run the bot
+CMD ["python3", "bot.py"]
